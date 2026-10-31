@@ -9,3 +9,17 @@
   margin: -10px;
   margin-bottom: 2.5rem;
 }
+
+.btn-sorprendeme {
+  width: 40rem;
+}
+
+.selector-pokemon {
+  display: flex;
+  justify-content: flex-end;
+  gap: 5;
+}
+
+.selector-pokemon {
+  width: 170px;
+}
