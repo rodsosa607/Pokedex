@@ -1,3 +1,14 @@
 .custom-navbar {
     background-color: #DC3545;
+    header nav div a {
+        color: white;
+    }
+}
+
+.detail-title {
+    
+}
+
+.image-card-detail {
+    width: 150px;
 }
