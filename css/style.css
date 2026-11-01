@@ -1,25 +1,120 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+:root {
+  --fondo-card: #f2f2f2;
+  --badge-green: #9bcb50;
+  --badge-violet: #ba80c9;
+  --badge-orange: #fd7d25;
+  --btn-blue: #1a82b1;
+  --badge-blue: #30a7d7;
+  --text-numero-badge: #919191;
+  --badge-grey: #a5acaf;
+}
+/* Estilos del Body */
+body {
+  line-height: 1.7;
+}
+
+/* Estilo del main */
+main {
+  max-width: 1000px;
+  margin: 0px auto;
+  padding: 10px 5px;
+}
+
 .custom-navbar {
   background-color: #dc3545;
 }
 
-.imghero {
-  width: 100%;
+/* Imagen Principal */
+.img-hero {
+  display: block;
+  width: 100vw;
   height: 350px;
   object-fit: cover;
-  margin: -10px;
-  margin-bottom: 2.5rem;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  margin: 0 0 2.5rem;
 }
 
+/* Boton y el form de seleccion */
 .btn-sorprendeme {
-  width: 40rem;
+  width: 29.5rem;
 }
 
-.selector-pokemon {
+.selector-container {
   display: flex;
+  align-items: center;
   justify-content: flex-end;
-  gap: 5;
+  gap: 8px;
+  margin-bottom: 2.5rem;
 }
 
 .selector-pokemon {
   width: 170px;
+}
+
+/* Grilla Card de Pokemon */
+div.card {
+  /* width: 18rem; */
+  width: 100%;
+  max-width: 14rem;
+  margin-inline: auto;
+  border: none;
+
+  img {
+    background-color: var(--fondo-card);
+  }
+}
+
+div.card .card-body {
+  padding: 0.75rem;
+}
+
+div.card .card-img-top {
+  border: 1px solid #dee2e6;
+  border-radius: var(--bs-card-border-radius);
+}
+
+.badge-green {
+  background-color: var(--badge-green);
+  width: 5rem;
+  color: #212121;
+  font-weight: 300;
+}
+
+.badge-violet {
+  background-color: var(--badge-violet);
+  font-weight: 300;
+  width: 5rem;
+}
+
+.badge-orange {
+  background-color: var(--badge-orange);
+  font-weight: 300;
+  width: 5rem;
+}
+
+.badge-blue {
+  background-color: var(--badge-blue);
+  font-weight: 300;
+  width: 5rem;
+}
+
+.badge-grey {
+  background-color: var(--badge-grey);
+  font-weight: 300;
+  color: #212121;
+  width: 5rem;
+}
+
+.text-numero-badge {
+  color: var(--text-numero-badge);
+  font-weight: 600;
+  color:;
 }
