@@ -49,6 +49,7 @@ main {
   object-fit: cover;
 }
 
+/* Badge negro al costado con position */
 .hero-box {
   position: absolute;
   bottom: 1rem;
@@ -69,6 +70,7 @@ main {
 
 .hero-box p {
   font-size: 0.7rem;
+  text-align: center;
 }
 
 /* Boton y el form de seleccion */
@@ -91,9 +93,20 @@ main {
 
 /* Grilla Card de Pokemon */
 div.card {
+  position: relative;
   width: 100%;
   max-width: 14rem;
   margin-inline: auto;
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+}
+div.card:hover {
+  position: relative;
+  width: 100%;
+  max-width: 14rem;
+  margin-inline: auto;
+  transform: translateY(-8px);
 }
 
 div.card .card-body {
@@ -116,6 +129,7 @@ div.card .card-img-top {
   background-color: var(--fondo-card);
   border-radius: var(--bs-card-border-radius);
   padding: 1rem;
+  transition: transform 0.25s ease;
 }
 
 /* Estilos de badge */
