@@ -1,3 +1,13 @@
+body {
+    display: flex;
+    flex-direction: column;
+    min-width: 100vh;
+}
+
+main {
+    flex-grow: 1;
+}
+
 .custom-navbar {
     background-color: #DC3545;
     header nav div a {
@@ -5,10 +15,12 @@
     }
 }
 
-.detail-title {
-    
-}
-
 .image-card-detail {
     width: 150px;
+}
+
+.social-icons {
+    color: white;
+    font-size: 25px;
+    text-decoration: none;
 }

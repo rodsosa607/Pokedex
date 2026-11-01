@@ -7,50 +7,95 @@
     <meta name="author" content="Rodrigo Sosa, Javier Brito, Ricardo Mota">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="./css/style.css">
     <title>Pokedex</title>
 </head>
 
 <body>
-    <header>
-        <nav class="navbar navbar-expand-lg custom-navbar">
-            <div class="container-fluid">
-                <a class="navbar-brand" href="./index.html">Pokedex</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                    aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                        <li class="nav-item">
-                            <a class="nav-link" aria-current="page" href="#">Categorias</a>
+    <div class="d-flex flex-column min-vh-100">
+        <!-- header & navbar -->
+        <header>
+            <nav class="navbar navbar-expand-lg custom-navbar">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="./index.html">Pokedex</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link" aria-current="page" href="#">Categorias</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Videojuegos</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Juego de cartas</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Eventos</a>
+                            </li>
+                        </ul>
+                        <form class="d-flex" role="search">
+                            <input class="form-control me-2" type="search" placeholder="Buscar un pokemón"
+                                aria-label="Search" />
+                            <button class="btn btn-outline-light" type="button">Buscar</button>
+                        </form>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <main>
+
+        </main>
+        <!-- footer -->
+        <div class="container-fluid bg-dark text-white">
+            <footer class="row row-cols-1 row-cols-sm-2 row-cols-md-5 py-3 my-3">
+                <div class="col mb-3">
+                    <h5>The Pokemon Company</h5>
+                    <ul class="nav flex-column">
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white">Novedades</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Videojuegos</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Juego de cartas</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Eventos</a>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white">Guía para padres
+                                y
+                                tutores</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white">Servicio de
+                                atención
+                                al cliente</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white">Sobre nuestra
+                                compañía</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white">Seleccionar país
+                                o
+                                región</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white">Sitio de
+                                prensa</a>
                         </li>
                     </ul>
-                    <form class="d-flex" role="search">
-                        <input class="form-control me-2" type="search" placeholder="Buscar un pokemón"
-                            aria-label="Search" />
-                        <button class="btn btn-outline-light" type="button">Buscar</button>
-                    </form>
                 </div>
-            </div>
-        </nav>
-    </header>
-    <main>
-
-    </main>
-    <footer>
-
-    </footer>
+                <div class="social-icons">
+                    <i class="bi bi-facebook"></i>
+                    <i class="bi bi-youtube"></i>
+                    <i class="bi bi-twitter"></i>
+                </div>
+                <div class="col mb-3">
+                    <h5>Nosotros</h5>
+                    <ul class="nav flex-column">
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white">Términos de
+                                uso</a>
+                        </li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white">Aviso sobre la
+                                privacidad</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white">Información
+                                legal</a>
+                        </li>
+                    </ul>
+                </div>
+            </footer>
+        </div>
+    </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 
