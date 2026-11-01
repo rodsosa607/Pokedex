@@ -13,6 +13,8 @@
   --badge-blue: #30a7d7;
   --text-numero-badge: #919191;
   --badge-grey: #a5acaf;
+  --badge-yellow: #eed535;
+  --badge-mustard: #ab9841;
 }
 /* Estilos del Body */
 body {
@@ -61,24 +63,31 @@ main {
 
 /* Grilla Card de Pokemon */
 div.card {
-  /* width: 18rem; */
   width: 100%;
   max-width: 14rem;
   margin-inline: auto;
-  border: none;
-
-  img {
-    background-color: var(--fondo-card);
-  }
 }
 
 div.card .card-body {
-  padding: 0.75rem;
+  padding: 0.4rem 0.65rem;
+  line-height: 1.2;
+}
+
+div.card .text-numero-badge {
+  margin-bottom: 0.2rem;
+}
+
+div.card .card-title {
+  margin-bottom: 0.3rem;
+  font-size: 1rem;
 }
 
 div.card .card-img-top {
+  object-fit: contain;
   border: 1px solid #dee2e6;
+  background-color: var(--fondo-card);
   border-radius: var(--bs-card-border-radius);
+  padding: 1rem;
 }
 
 .badge-green {
@@ -99,6 +108,18 @@ div.card .card-img-top {
   font-weight: 300;
   width: 5rem;
 }
+.badge-yellow {
+  background-color: var(--badge-yellow);
+  font-weight: 300;
+  width: 5rem;
+  color: #212121;
+}
+.badge-mustard {
+  background-color: var(--badge-mustard);
+  font-weight: 300;
+  width: 5rem;
+  color: #212121;
+}
 
 .badge-blue {
   background-color: var(--badge-blue);
@@ -116,5 +137,4 @@ div.card .card-img-top {
 .text-numero-badge {
   color: var(--text-numero-badge);
   font-weight: 600;
-  color:;
 }
