@@ -1,11 +1,201 @@
-body {
-    display: flex;
-    flex-direction: column;
-    min-width: 100vh;
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
 }
 
+:root {
+  --fondo-card: #f2f2f2;
+  --badge-green: #9bcb50;
+  --badge-violet: #ba80c9;
+  --badge-orange: #fd7d25;
+  --btn-blue: #1a82b1;
+  --badge-blue: #30a7d7;
+  --text-numero-badge: #919191;
+  --badge-grey: #a5acaf;
+  --badge-yellow: #eed535;
+  --badge-mustard: #ab9841;
+}
+/* Estilos del Body */
+body {
+  line-height: 1.7;
+  display: flex;
+  flex-direction: column;
+  min-width: 100vh;
+}
+
+/* Estilo del main */
 main {
-    flex-grow: 1;
+  width: 100%;
+  max-width: 1000px;
+  margin-inline: auto;
+  padding: 10px 12px;
+  flex-grow: 1;
+}
+
+.custom-navbar {
+  background-color: #dc3545;
+}
+
+/* Imagen Principal */
+.hero-container {
+  position: relative;
+  left: 50%;
+  width: 100vw;
+  transform: translateX(-50%);
+  margin-bottom: 2.5rem;
+}
+
+.img-hero {
+  display: block;
+  width: 100%;
+  height: 350px;
+  object-fit: cover;
+}
+
+/* Badge negro al costado con position */
+.hero-box {
+  position: absolute;
+  bottom: 1rem;
+  left: 0;
+  display: flex;
+  width: 3rem;
+  height: 9rem;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.75rem;
+  background-color: #000;
+  color: var(--fondo-card);
+  border: 1px solid var(--fondo-card);
+  border-left: 0;
+  border-radius: 0 5px 5px 0;
+}
+
+.hero-box p {
+  font-size: 0.7rem;
+  text-align: center;
+}
+
+/* Boton y el form de seleccion */
+.btn-sorprendeme {
+  width: 100%;
+  max-width: 29.5rem;
+}
+
+.selector-container {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 8px;
+  margin-bottom: 2.5rem;
+}
+
+.selector-pokemon {
+  width: 170px;
+}
+
+/* Grilla Card de Pokemon */
+div.card {
+  position: relative;
+  width: 100%;
+  max-width: 14rem;
+  margin-inline: auto;
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+}
+div.card:hover {
+  position: relative;
+  width: 100%;
+  max-width: 14rem;
+  margin-inline: auto;
+  transform: translateY(-8px);
+}
+
+div.card .card-body {
+  padding: 0.4rem 0.65rem;
+  line-height: 1.2;
+}
+
+div.card .text-numero-badge {
+  margin-bottom: 0.2rem;
+}
+
+div.card .card-title {
+  margin-bottom: 0.3rem;
+  font-size: 1rem;
+}
+
+div.card .card-img-top {
+  object-fit: contain;
+  border: 1px solid #dee2e6;
+  background-color: var(--fondo-card);
+  border-radius: var(--bs-card-border-radius);
+  padding: 1rem;
+  transition: transform 0.25s ease;
+}
+
+/* Estilos de badge */
+.badge-green {
+  background-color: var(--badge-green);
+  width: 5rem;
+  color: #212121;
+  font-weight: 300;
+}
+
+.badge-violet {
+  background-color: var(--badge-violet);
+  font-weight: 300;
+  width: 5rem;
+}
+
+.badge-orange {
+  background-color: var(--badge-orange);
+  font-weight: 300;
+  width: 5rem;
+}
+.badge-yellow {
+  background-color: var(--badge-yellow);
+  font-weight: 300;
+  width: 5rem;
+  color: #212121;
+}
+.badge-mustard {
+  background-color: var(--badge-mustard);
+  font-weight: 300;
+  width: 5rem;
+  color: #212121;
+}
+
+.badge-blue {
+  background-color: var(--badge-blue);
+  font-weight: 300;
+  width: 5rem;
+}
+
+.badge-grey {
+  background-color: var(--badge-grey);
+  font-weight: 300;
+  color: #212121;
+  width: 5rem;
+}
+
+.text-numero-badge {
+  color: var(--text-numero-badge);
+  font-weight: 600;
+}
+
+.btn-cargar-mas {
+  background-color: #dc3545;
+  color: white;
+}
+
+/* Media query */
+@media (max-width: 576px) {
+  .img-hero {
+    height: 220px;
+  }
 }
 
 .custom-navbar {
