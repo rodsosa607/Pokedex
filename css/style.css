@@ -23,9 +23,10 @@ body {
 
 /* Estilo del main */
 main {
+  width: 100%;
   max-width: 1000px;
-  margin: 0px auto;
-  padding: 10px 5px;
+  margin-inline: auto;
+  padding: 10px 12px;
 }
 
 .custom-navbar {
@@ -46,7 +47,8 @@ main {
 
 /* Boton y el form de seleccion */
 .btn-sorprendeme {
-  width: 29.5rem;
+  width: 100%;
+  max-width: 29.5rem;
 }
 
 .selector-container {
@@ -137,4 +139,16 @@ div.card .card-img-top {
 .text-numero-badge {
   color: var(--text-numero-badge);
   font-weight: 600;
+}
+
+.btn-cargar-mas {
+  background-color: #dc3545;
+  color: white;
+}
+
+/* Media query */
+@media (max-width: 576px) {
+  .img-hero {
+    height: 220px;
+  }
 }
