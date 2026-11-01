@@ -1,5 +1,6 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="description" content="Sitio web personajes Pokemon">
@@ -8,284 +9,51 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="./css/style.css">
-
     <title>Pokedex</title>
-  </head>
+</head>
 
-  <body>
-    <header>
-      <nav class="navbar navbar-expand-lg bg-body-tertiary custom-navbar">
-        <div class="container">
-          <a class="navbar-brand" href="#">Pokedex</a>
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="#">Categorias</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Videojuegos</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Juego de cartas</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Eventos</a>
-              </li>
-            </ul>
-            <form class="d-flex" role="search">
-              <input
-                class="form-control me-2"
-                type="search"
-                placeholder="Buscar un pokemón"
-                aria-label="Search"
-              />
-              <button class="btn btn-outline-success" type="submit">
-                Buscar
-              </button>
-            </form>
-          </div>
-        </div>
-      </nav>
-    </header>
-    <main>
-      <div class="hero-container">
-        <img
-          class="img-hero"
-          src="./img/pexels-caleboquendo-7772561.jpg"
-          alt="Poke Bola"
-        />
-        <div class="hero-box" aria-hidden="true">
-          <i class="bi bi-person-circle"></i>
-          <p>Iniciar sesión</p>
-          <i class="bi bi-search"></i>
-        </div>
-      </div>
-      <div>
-        <div class="container">
-          <div class="row">
-            <div class="col container">
-              <button
-                type="button"
-                class="btn pe-none btn-primary btn-sorprendeme"
-              >
-                <i class="bi bi-arrow-repeat m-lg-2"></i>Sorprendeme
-              </button>
-            </div>
-            <div class="col selector-container">
-              <p class="mb-0">Ordenar por</p>
-              <select
-                class="form-select selector-pokemon"
-                aria-label="Selector"
-              >
-                <option selected>Numero inferior</option>
-                <option value="1">One</option>
-                <option value="2">Two</option>
-                <option value="3">Three</option>
-              </select>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div>
-        <div class="container">
-          <div
-            class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-3"
-          >
-            <div class="col">
-              <div class="card">
-                <img
-                  src="./img/Bulbasaur001.png"
-                  class="card-img-top img-card"
-                  alt="Bulbasaur"
-                />
-                <div class="card-body">
-                  <p class="text-numero-badge">Nº 0001</p>
-                  <h5 class="card-title">Bulbasaur</h5>
-                  <span class="badge badge-green">Planta</span>
-                  <span class="badge badge-violet">Veneno</span>
+<body>
+    <div class="d-flex flex-column min-vh-100">
+        <!-- header & navbar -->
+        <header>
+            <nav class="navbar navbar-expand-lg custom-navbar">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="./index.html">Pokedex</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link" aria-current="page" href="#">Categorias</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Videojuegos</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Juego de cartas</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Eventos</a>
+                            </li>
+                        </ul>
+                        <form class="d-flex" role="search">
+                            <input class="form-control me-2" type="search" placeholder="Buscar un pokemón"
+                                aria-label="Search" />
+                            <button class="btn btn-outline-light" type="button">Buscar</button>
+                        </form>
+                    </div>
                 </div>
-              </div>
-            </div>
-            <div class="col">
-              <div class="card">
-                <img
-                  src="./img/Charmander002.png"
-                  class="card-img-top img-card"
-                  alt="Charmander"
-                />
-                <div class="card-body">
-                  <p class="text-numero-badge">Nº 0002</p>
-                  <h5 class="card-title">Charmander</h5>
-                  <span class="badge badge-orange">Fuego</span>
-                </div>
-              </div>
-            </div>
-            <div class="col">
-              <div class="card">
-                <img
-                  src="./img/Caterpie003.png"
-                  class="card-img-top img-card"
-                  alt="Caterpie"
-                />
-                <div class="card-body">
-                  <p class="text-numero-badge">Nº 0003</p>
-                  <h5 class="card-title">Caterpie</h5>
-                  <span class="badge badge-green">Insecto</span>
-                </div>
-              </div>
-            </div>
-            <div class="col">
-              <div class="card">
-                <img
-                  src="./img/Pidgeotto004.png"
-                  class="card-img-top img-card"
-                  alt="Pidgeotto"
-                />
-                <div class="card-body">
-                  <p class="text-numero-badge">Nº 0004</p>
-                  <h5 class="card-title">Pidgeotto</h5>
-                  <span class="badge badge-grey">Normal</span>
-                  <span class="badge badge-grey">Volador</span>
-                </div>
-              </div>
-            </div>
-            <div class="col">
-              <div class="card">
-                <img
-                  src="./img/Arbok005.png"
-                  class="card-img-top img-card"
-                  alt="Arbok"
-                />
-                <div class="card-body">
-                  <p class="text-numero-badge">Nº 0005</p>
-                  <h5 class="card-title">Arbok</h5>
-                  <span class="badge badge-violet">Veneno</span>
-                </div>
-              </div>
-            </div>
-            <div class="col">
-              <div class="card">
-                <img
-                  src="./img/Pikachu006.png"
-                  class="card-img-top img-card"
-                  alt="Pikachu"
-                />
-                <div class="card-body">
-                  <p class="text-numero-badge">Nº 0006</p>
-                  <h5 class="card-title">Pikachu</h5>
-                  <span class="badge badge-yellow">Fuego</span>
-                </div>
-              </div>
-            </div>
-            <div class="col">
-              <div class="card">
-                <img
-                  src="./img/Nidoqueen007.png"
-                  class="card-img-top img-card"
-                  alt="Nidoqueen"
-                />
-                <div class="card-body">
-                  <p class="text-numero-badge">Nº 0007</p>
-                  <h5 class="card-title">Nidoqueen</h5>
-                  <span class="badge badge-violet">Veneno</span>
-                  <span class="badge badge-mustard">Tierra</span>
-                </div>
-              </div>
-            </div>
-            <div class="col">
-              <div class="card">
-                <img
-                  src="./img/Zubat008.png"
-                  class="card-img-top img-card"
-                  alt="Zubat"
-                />
-                <div class="card-body">
-                  <p class="text-numero-badge">Nº 0008</p>
-                  <h5 class="card-title">Zubat</h5>
-                  <span class="badge badge-violet">Veneno</span>
-                  <span class="badge badge-grey">Volador</span>
-                </div>
-              </div>
-            </div>
-            <div class="col">
-              <div class="card">
-                <img
-                  src="./img/Oddish009.png"
-                  class="card-img-top img-card"
-                  alt="Oddish"
-                />
-                <div class="card-body">
-                  <p class="text-numero-badge">Nº 0009</p>
-                  <h5 class="card-title">Oddish</h5>
-                  <span class="badge badge-violet">Veneno</span>
-                  <span class="badge badge-green">Planta</span>
-                </div>
-              </div>
-            </div>
-            <div class="col">
-              <div class="card">
-                <img
-                  src="./img/Vileplume010.png"
-                  class="card-img-top img-card"
-                  alt="Vileplume"
-                />
-                <div class="card-body">
-                  <p class="text-numero-badge">Nº 0010</p>
-                  <h5 class="card-title">Vileplume</h5>
-                  <span class="badge badge-green">Planta</span>
-                  <span class="badge badge-violet">Veneno</span>
-                </div>
-              </div>
-            </div>
-            <div class="col">
-              <div class="card">
-                <img
-                  src="./img/Meowth011.png"
-                  class="card-img-top img-card"
-                  alt="Meowth"
-                />
-                <div class="card-body">
-                  <p class="text-numero-badge">Nº 0011</p>
-                  <h5 class="card-title">Meowth</h5>
-                  <span class="badge badge-grey">Normal</span>
-                </div>
-              </div>
-            </div>
-            <div class="col">
-              <div class="card">
-                <img
-                  src="./img/Primeape012.png"
-                  class="card-img-top img-card"
-                  alt="Primeape"
-                />
-                <div class="card-body">
-                  <p class="text-numero-badge">Nº 0012</p>
-                  <h5 class="card-title">Primeape</h5>
-                  <span class="badge badge-orange">Lucha</span>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="d-flex justify-content-center">
-            <button type="button" class="btn pe-none btn-cargar-mas mt-3 mb-3">
-              Cargar más Pokémon
-            </button>
-          </div>
-        </div>
-      </div>
-    </main>
-    <footer class="row row-cols-1 row-cols-sm-2 row-cols-md-5 py-3 my-3">
+            </nav>
+        </header>
+        <main>
+
+        </main>
+        <!-- footer -->
+        <div class="container-fluid bg-dark text-white">
+            <footer class="row row-cols-1 row-cols-sm-2 row-cols-md-5 py-3 my-3">
                 <div class="col mb-3">
                     <h5>The Pokemon Company</h5>
                     <ul class="nav flex-column">
@@ -326,7 +94,9 @@
                     </ul>
                 </div>
             </footer>
-<body>
+        </div>
+    </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
-  </body>
+</body>
+
 </html>
